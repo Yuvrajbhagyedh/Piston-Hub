@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 5px;
+        max-width: 500px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Secure Payment</h1>
+      <form id="payment-form">
+        <div class="form-group">
+          <label for="name">Name on Card</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input type="text" name="card-number" id="card-number" required />
+        </div>
+        <div class="form-group">
+          <label for="expiry-month">Expiry Month</label>
+          <input
+            type="number"
+            name="expiry-month"
+            id="expiry-month"
+            min="1"
+            max="12"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="expiry-year">Expiry Year</label>
+          <input
+            type="number"
+            name="expiry-year"
+            id="expiry-year"
+            min="2024"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            min="100"
+            max="999"
+            required
+          />
+        </div>
+        <button type="submit" id="submit-btn">Submit Payment</button>
+      </form>
+    </div>
+
+    <script src="script.js">
+          // Simple example to add some basic validation. You can improve this further.
+      const form = document.getElementById('payment-form');
+      const submitBtn = document.getElementById('submit-btn');
+
+      submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const cardNumber = document.getElementById('card-number').value;
+        const expiryMonth = document.getElementById('expiry-month').value;
+        const expiryYear = document.getElementById('expiry-year').value;
+        const cvv = document.getElementById('cvv').value;
+
+        // Basic validation checks
+        if (!name || !cardNumber || !expiryMonth || !expiryYear || !cvv) {
+          alert('Please fill out all fields!');
+          return;
+        }
+
+        // Simulate form submission (for demo purposes)
+        alert('Payment details submitted!');
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
