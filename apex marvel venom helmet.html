@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .product-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+      }
+      .product-details {
+        text-align: center;
+      }
+      .product-title {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      .product-price {
+        font-size: 20px;
+        color: #b12704;
+        margin: 10px 0;
+      }
+      .product-description {
+        font-size: 16px;
+        margin: 20px 0;
+      }
+      .buttons {
+        margin: 20px 0;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn-buy {
+        background-color: #ff9900;
+        color: white;
+      }
+      .btn-cart {
+        background-color: #333;
+        color: white;
+      }
+      .btn-buy:hover {
+        background-color: #cc7a00;
+      }
+      .btn-cart:hover {
+        background-color: #111;
+      }
+      .reviews {
+        margin-top: 40px;
+      }
+      .review {
+        border-top: 1px solid #e4e4e4;
+        padding: 20px 0;
+      }
+      .review:first-child {
+        border-top: none;
+      }
+      .review-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .review-body {
+        font-size: 16px;
+      }
+      ::-webkit-scrollbar {
+        scrollbar-width: 0;
+      }
+      ::selection {
+        background-color: orange;
+        color: white;
+      }
+            nav {
+        background-color: rgb(0, 0, 0);
+        font-family: "Brygada 1918", serif;
+        font-style: italic;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 40px;
+        width: 60px; /* Adjust as needed */
+      }
+
+      nav ul {
+        list-style-type: none;
+        text-align: center;
+        margin-left: auto;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+       .copyrights{
+      
+      text-align: center;
+      
+   background-color: #ffffff;
+    font-family:  "Brygada 1918", serif;;
+    font-style: italic;
+    
+    }
+     .column {
+    flex-basis: calc(25% - 20px); /* Adjust width here */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .containerfooter {
+    font-family: "Brygada 1918", serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+  
+
+  footer h4 {
+    color: #000000;
+    
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+    color: #000000;
+  }
+
+  footer ul {
+    font-size: 14px;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  footer ul li a:hover {
+    color:rgb(106, 79, 28);
+  }
+
+ 
+
+  footer p.text-center {
+    color: #ffffff;
+  }
+  .footerimage{
+    margin-top: 8px;
+    width: 65px;
+  }
+  hr{
+    background-color: #ffffff;
+  }
+  .footercomplete{
+    margin-top: 50px;
+    background-color: #ffffff;
+  }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="all images/piston hub white.png"
+          alt="Accessories Emporium Logo"
+        />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <a href="Apex Marvel gloves.html">
+        <img
+          src="all images/axor venom.png"
+          alt="Product Image"
+          class="product-image"
+      /></a>
+
+      <div class="product-details">
+        <h1 class="product-title">Apex Marvel Venom Helmet</h1>
+        <p class="product-price">₹500</p>
+        <p class="product-description">
+          This is a great product that you will love. It has many fantastic
+          features and benefits that will make your life easier and more
+          enjoyable.
+        </p>
+
+        <div class="buttons">
+          <button class="btn btn-buy">Buy Now</button>
+          <button class="btn btn-cart">Add to Cart</button>
+        </div>
+
+        <div class="reviews">
+          <h2>Customer Reviews</h2>
+          <div class="review">
+            <h3 class="review-title">Great product!</h3>
+            <p class="review-body">
+              I absolutely love this product. It has exceeded my expectations in
+              every way.
+            </p>
+          </div>
+          <div class="review">
+            <h3 class="review-title">Good value for money</h3>
+            <p class="review-body">
+              This product offers great value for its price. Highly recommend!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+          <div class="footercomplete">
+      <div class="containerfooter">
+        <div class="column">
+          <img src="all images/Piston hub.png" alt="" class="footerimage"><br>
+          <p><i>Piston Hub: Ignite Your Ride! Discover premium bike accessories and expert repair services at our Bike Gear Revive Hub.</i></p>
+        </div>
+        <div class="column">
+          <i><h4>Quick Links</h4></i>
+          <ul><i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+          
+            
+            
+            <li><a href="#">Contact Us</a></li>
+          </ul></i>
+        </div>
+        <div class="column">
+          <i><h4>Contact Information</h4></i>
+          <i><p>Email:Pistonhub@gmail.com<br>Phone: +91 8088713396<br>Address: 4th main Nagasandhra, Bengaluru, Karnataka</p></i>
+        </div>
+        <div class="column">
+         <i> <h4>Follow Us</h4></i>
+          <ul><i>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul></i>
+        </div></div>
+        <hr>
+         <p class="copyrights"> All rights are reserved @Pistonhub.com </p>
+      </div>
+     
+    </footer>
+  </body>
+</html>
